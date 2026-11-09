@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "silkscreen-audio-attachment")(type "KiCad")(uri "${KIPRJMOD}/lib/silkscreen-audio-attachment.kicad_sym")(options "")(descr "Audio attachment symbols (generated)"))
+)

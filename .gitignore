@@ -1,0 +1,47 @@
+# KiCad per-user files, caches, backups and lock files
+*.kicad_prl
+fp-info-cache
+*-backups/
+*.lck
+~*.lck
+_autosave-*
+*-cache.lib
+# MCP server reports written next to the board
+*_drc_violations.json
+
+# Python caches
+__pycache__/
+*.pyc
+
+# PCB generator scratch (regenerate with pcb/tools/generate.py, then pcb/tools/make_outputs.py).
+# pcb/production/ (fab files, BOMs, STEP) and pcb/docs/ (PDFs, renders, reports) are generated too, but they are KEPT.
+# Note: the housing build reads pcb/build/geometry.json, so run the PCB step before housing/src/build.py.
+pcb/build/
+
+# Housing build outputs (regenerate with housing/src/build.py).
+# KEPT: housing/out/print/ (print files), housing/out/render/ (renders), REPORT.md, checks.json and the slice-report JSONs.
+housing/out/E/
+housing/out/slice/*/
+# OrcaSlicer / OCC logs
+**/00000.log
+
+# Local fit-reference copy of the separate silkscreen-enclosure-claude repository (rev K, about 271 MB).
+# The housing checks read the stock case from here. It belongs to that repo: copy it in from there, never commit it.
+enclosures/silkscreen-enclosure-claude/
+
+# Local only, never published (2026-10-21): agent notes with machine paths, the workflow scripts that drove the
+# design runs (machine paths), third-party evidence (a datasheet page, LCSC/EasyEDA part data), rev A build logs
+# with machine paths, and slicer G-code.
+CLAUDE.local.md
+workflows/
+pcb/docs/sources/
+archive/rev-A-rod-lens/pcb/docs/sources/
+archive/rev-A-rod-lens/housing/out/*.log
+archive/rev-A-rod-lens/housing/out/E/
+archive/rev-A-rod-lens/housing/out/slice/*/
+*.gcode
+
+# Console logs from local build runs (some carry machine paths)
+pcb/build_log.txt
+housing/*.log
+housing/out/*.log

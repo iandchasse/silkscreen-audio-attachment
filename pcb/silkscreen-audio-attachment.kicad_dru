@@ -1,0 +1,7 @@
+(version 1)
+
+# Copper (tracks, pads, vias, pours) keeps 0.5 mm off every mechanical NPTH: the two 4.80 lid screw columns and the
+# two 1.30 jack pegs.
+(rule "npth_mech_0p5"
+    (constraint hole_clearance (min 0.5mm))
+    (condition "B.Pad_Type == 'NPTH, mechanical'"))

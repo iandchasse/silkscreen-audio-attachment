@@ -1,0 +1,39 @@
+Silkscreen audio attachment — clip-on I2S headphone / line output for the Silkscreen e-reader (plugs into the main board's expansion header through the stock case)
+
+Copyright © 2026 idc LLC.
+
+This source describes Open Hardware and is licensed under the CERN-OHL-S v2.
+
+You may redistribute and modify this source and make products using it under the
+terms of the CERN Open Hardware Licence Version 2 - Strongly Reciprocal
+(CERN-OHL-S v2, https://ohwr.org/cern_ohl_s_v2.txt; full text in ./LICENSE).
+
+This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF
+MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.
+Please see the CERN-OHL-S v2 for applicable conditions.
+
+Companion to https://github.com/iandchasse/silkscreen-pcb
+
+SPDX-License-Identifier: CERN-OHL-S-2.0
+
+-------------------------------------------------------------------------------
+
+Third-party content (NOT covered by the license above):
+
+- pcb/lib/silkscreen-audio-attachment.pretty/: SOT-23-5, SOT-23, TSSOP-20_4.4x6.5mm_P0.65mm,
+  TSSOP-14_4.4x5mm_P0.65mm, R_0603_1608Metric and C_0603_1608Metric are copies of the KiCad
+  standard footprints, and pcb/lib/silkscreen-audio-attachment.3dshapes/ holds copies of the
+  matching KiCad standard 3D models. The symbols in pcb/lib/silkscreen-audio-attachment.kicad_sym
+  that are derived from the KiCad standard libraries are likewise copies. These remain under
+  CC-BY-SA-4.0 with the KiCad library exception.
+- pcb/docs/sources/ keeps third-party reference material as design evidence: the Shou Han PJ-313D
+  datasheet (pj313d_atta.pdf) and part and footprint data returned by the LCSC/JLCPCB and EasyEDA
+  services (*.json). These belong to their owners and are included only to document the design
+  decisions.
+- housing/: the base is derived from the silkscreen-light-attachment rev C housing (idc LLC,
+  CERN-OHL-S v2). The fit checks read the Silkscreen 4.26" case meshes from silkscreen-enclosures
+  (idc LLC, CERN-OHL-S v2); they are not copied here.
+- All other footprints (the PJ-313D jack, the J6 plug headers, the NPTH holes), the generated
+  symbols, the 3D models made by pcb/tools/make_step_models.py (jack and headers), the housing
+  CadQuery sources and outputs, and every script under pcb/tools/ and housing/src/ are
+  project-made and covered by the project license.

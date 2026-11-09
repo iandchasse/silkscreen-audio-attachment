@@ -1,0 +1,17 @@
+{
+  "erc": 0,
+  "drc": 0,
+  "unconnected": 0,
+  "parity": 0,
+  "erc_exclusions": 0,
+  "drc_exclusions": 0,
+  "ignored_drc_checks": [],
+  "ignored_erc_checks": [],
+  "handedness_gate": "PASS",
+  "field_sync": {
+    "parts": 45,
+    "fields_compared": 315,
+    "mismatches": [],
+    "dnp": []
+  }
+}
